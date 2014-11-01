@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="webAppTest Practice" parallel="tests">
+    <parameter name="userName" value="ismailosmanjan"/>
+    <parameter name="access_Key" value="370df818-9b70-4596-a315-8a9b81bb6953"/>
+
+    <parameter name="useSauceLabs" value="false"/>
+
+    <parameter name="url" value="http://www.yahoo.com"/>
+
+    <test name="Test on Windows 7 with firefox browser">
+        <parameter name="os" value="Windows 7"/>
+        <parameter name="browser" value="firefox"/>
+        <parameter name="browserVersion" value="29.0"/>
+        
+        <classes>
+            <class name="SelTesting.webTesting"/>
+        </classes>
+    </test>
+
+</suite>
